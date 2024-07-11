@@ -14,7 +14,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" bg-transparent top-0 md:flex md:justify-between border-b-2 border-tertiary  md:px-10 max-md:p-5 h-20 ">
+    <div className=" bg-transparent top-0 md:flex md:justify-between border-b-2 border-tertiary  md:px-10 max-md:p-5 h-20 ">
       <div className="flex justify-between  items-center">
         <span className="text-xl">Logo</span>
         <button
@@ -48,6 +48,6 @@ export const Navbar = () => {
           </li>
         ))}
       </ul>
-    </nav>
+    </div>
   );
 };
