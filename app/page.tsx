@@ -2,7 +2,9 @@
 import { Hero } from "@/components/Hero";
 import About from '@/components/sections/about'
 import { Navbar } from "@/components/Navbar";
+import DirectorNotes from '@/components/sections/director-note'
 import Footer from '@/components/Footer'
+import Products from '@/components/sections/product'
 
 export default function Home() {
   return (
@@ -13,7 +15,13 @@ export default function Home() {
       </div>
       <div className="h-full w-full">
       <About/>
+        </div>
+        <div className="container">
+          <DirectorNotes/>
         </div> 
+        <div className="container">
+          <Products />
+        </div>
       <Footer />
     </>
   );

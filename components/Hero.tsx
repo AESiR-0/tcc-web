@@ -60,7 +60,7 @@ export function Hero() {
         <h4 className="mb-6 text-xl font-semibold">{obj.tagline}</h4>
         <button
           type="button"
-          className="rounded  px-7 pb-[8px] pt-[10px] text-sm drop-shadow opacity-70 font-medium uppercase leading-normal  transition duration-150 ease-in-out hover:bg-white hover:text-tertiary bg-tertiary text-white hover:bg-opacity-85 "
+          className="rounded  px-7 pb-[8px] pt-[10px] text-sm drop-shadow font-medium uppercase leading-normal  transition duration-150 ease-in-out hover:bg-white hover:text-tertiary bg-tertiary text-white hover:bg-opacity-85 "
           data-twe-ripple-init
           data-twe-ripple-color="light">
           About us
