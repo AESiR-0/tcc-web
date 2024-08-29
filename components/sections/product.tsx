@@ -29,7 +29,7 @@ export default function Products() {
         }} 
            key={index} className="border w-80 px-6  h-80 hover:bg-yellow-300 hover:scale-110 hover:cursor-pointer transition-all border-red-400">
                 <h1 className='text-xl my-5 text-center'>{prod.title}</h1>
-                <Image className='rounded mb-3' width={128} height={128} src={prod.image} />
+                <Image className='rounded mb-3' alt='product' width={128} height={128} src={prod.image} />
                 <h3 className="text-md flex hover:gap-2 gap-0 transition-all "> Read More<span>-&gt;</span></h3>
             </div>
          ))}
