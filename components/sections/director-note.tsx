@@ -39,7 +39,7 @@ export default function DirectorNotes() {
         <div className="w-full px-32 h-auto">
             <h1 className='text-center text-3xl my-5'>{selectedNote.title}</h1>
             <div className='flex gap-4 '>
-            <Image width={400} height={256} src={selectedNote.image} />
+            <Image width={400} height={256} src={selectedNote.image} alt='note image' />
             <p className='px-16'>{selectedNote.content}</p>
             </div>
         </div>
