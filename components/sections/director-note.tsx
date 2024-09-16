@@ -35,6 +35,7 @@ export default function DirectorNotes() {
 
   return (
     <>
+    <div className="text-5xl font-bold text-center my-6">Director&apos;s Note</div>
     <div className="w-full my-16">
         <div className="w-full px-32 h-auto">
             <h1 className='text-center text-3xl my-5'>{selectedNote.title}</h1>
@@ -44,7 +45,7 @@ export default function DirectorNotes() {
             </div>
         </div>
     </div>
-    <div className=" w-full flex justify-evenly">
+    <div className=" w-full flex gap-10 justify-center">
        {notes.map((note, index) => (
            <div 
            onClick={(e)=>{

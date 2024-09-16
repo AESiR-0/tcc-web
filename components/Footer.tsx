@@ -8,11 +8,10 @@ const menuItems = [
   { title: "Home", path: "/" },
   { title: "Products", path: "/products" },
   { title: "About Us", path: "/about" },
-  { title: "Contact", path: "/contact" },
 ];
 export default function Footer() {
   return (
-    <div className="border-t-2  border-t-tertiary justify-evenly items-center flex  gap-5 py-10 px-10">
+    <div className="border-t-2  border-t-black justify-evenly items-center flex  gap-5 py-10 px-10">
 
   
  

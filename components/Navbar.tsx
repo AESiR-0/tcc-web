@@ -9,7 +9,6 @@ const menuItems = [
   { title: "Home", path: "/" },
   { title: "Products", path: "/products" },
   { title: "About Us", path: "/about" },
-  { title: "Contact", path: "/contact" },
 ];
 
 export const Navbar = () => {
