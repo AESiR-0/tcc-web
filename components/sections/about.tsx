@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import placeholder from '@/public/static/section/background/about-us-placeholder.jpg'
-
+import images from '@/components/assets/images.json'
 
 export default function About() {
   return (
@@ -16,8 +15,9 @@ export default function About() {
           data-twe-ripple-color="light">
 Read More        </button>
         </div>
-      <Image src={placeholder} alt='placeholder'></Image>
-
+        <div className="flex justify-center items-center">
+      <Image width={1920} height={1080} src={images.factoryOut} alt='factory'></Image>
+      </div>
     </div>
   )
 }

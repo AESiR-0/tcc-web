@@ -50,7 +50,7 @@ export default function DirectorNotes() {
            onClick={(e)=>{
                 setSelectedNote(note)
         }} 
-           key={index} className="border w-60 px-6  h-fit hover:bg-yellow-300 hover:scale-95 hover:cursor-pointer transition-all border-red-400">
+           key={index} className=" w-72 px-6  h-fit hover:bg-blue-500 hover:scale-95 hover:cursor-pointer transition-all ">
                 <h1 className='text-xl my-5 text-center'>{note.title}</h1>
                 <Image className='rounded mb-3' width={128} height={128} alt='director note' src={note.image} />
             </div>
