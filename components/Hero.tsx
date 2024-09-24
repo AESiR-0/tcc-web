@@ -2,7 +2,7 @@
 import * as React from "react";
 import jaigarhFort from "@/public/static/caraousel/jaigarh-fort.jpg";
 import Autoplay from "embla-carousel-autoplay";
-import imagesJson from './assets/images.json'
+import {images} from './assets/images'
 import {
   Carousel,
   CarouselContent,
@@ -14,29 +14,29 @@ import {
 
 const content = [
   {
-    image: imagesJson.factoryCenter,
+    image: images.factoryCenter,
     title: "Taj Cables and Conductors",
     tagline: "Tagline",
   },
   {
-    image: imagesJson.factoryPov,
+    image: images.factoryPov,
     title: "Taj Cables and Conductors",
     tagline: "Tagline",
   },
   {
-    image: imagesJson.wireTopViewDark,
+    image: images.wireTopViewDark,
     title: "Taj Cables and Conductors",
     tagline: "Tagline",
 
   },
   {
-    image: imagesJson.workerWorkingWide,
+    image: images.workerWorkingWide,
     title: "Taj Cables and Conductors",
     tagline
     : "Tagline",
   },
   {
-    image:imagesJson.blurWorkerLookingAway,
+    image:images.blurWorkerLookingAway,
     title: "Taj Cables and Conductors",
     tagline: "Tagline",
   }
@@ -55,7 +55,7 @@ export function Hero() {
             <CarouselItem key={index}>
 <div
   className={`relative overflow-hidden opacity-80 bg-black  h-[100vh] bg-cover bg-no-repeat p-12 text-center`}
-  style={{ backgroundImage: `url(${obj.image})`, backgroundPosition:'center center' }}
+  style={{ backgroundImage: `url(${obj.image.src})`, backgroundPosition:'center center' }}
   >
   <div
     className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"

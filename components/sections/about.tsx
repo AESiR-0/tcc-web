@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import images from '@/components/assets/images.json'
+import {images} from '@/components/assets/images'
 
 export default function About() {
   return (
