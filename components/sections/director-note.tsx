@@ -35,7 +35,9 @@ export default function DirectorNotes() {
 
   return (
     <>
-    <div className="text-5xl font-bold text-center my-6">Director&apos;s Note</div>
+    <div className="text-5xl font-bold text-center my-3">Director&apos;s Note</div>
+    <p className="my-6 text-center px-48 text-lg">Our team is the backbone of our success. Comprising industry veterans, skilled engineers, and dedicated support staff, we work collaboratively to achieve our goals. Key members include:
+    </p>
     <div className="w-full my-16">
         <div className="w-full px-32 h-auto">
             <h1 className='text-center text-3xl my-5'>{selectedNote.title}</h1>
