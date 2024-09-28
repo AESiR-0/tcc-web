@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import jaigarhFort from "@/public/static/caraousel/jaigarh-fort.jpg";
+// import jaigarhFort from "@/public/static/caraousel/jaigarh-fort.jpg";
 import Autoplay from "embla-carousel-autoplay";
 import {images} from './assets/images'
 import {
