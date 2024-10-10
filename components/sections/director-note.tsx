@@ -20,7 +20,7 @@ I also realized that running a business is only a small part of a businessman's 
 Thus, I tend to take on this responsibility with all the qualities of and the utmost self-confidence, self-belief, and faith in the supreme energy guiding all of us.`
     },
     {
-        title: 'Uncle Pareek',
+        title: 'Neeraj Purohit',
         image: '/images/uncle.jpg',
         content: `I still clearly remember telling my dad not to go into this industry without doing much study or having any prior expertise. But being a visionary, he had already met the proprietors of these industrial facilities to learn about the business and ask for advice as a novice. He was prepared to fire all of the bullets and instantly hit the targets in a matter of months.
 However, I was still unsure about it, so my only motivation to research about this industry was curiosity. I first learnt about the numerous reforms and programs for the same from the government. Afterwards, I was essentially astounded by the sector's rise over the previous ten years and its amazing potential, which is not just in India. Although there is a significant capital required, it should be very straightforward to handle with the right financial management and skills.
