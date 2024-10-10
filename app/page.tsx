@@ -6,6 +6,7 @@ import DirectorNotes from '@/components/sections/director-note'
 import Footer from '@/components/Footer'
 import Products from '@/components/sections/product'
 
+
 export default function Home() {
   return (
     <>

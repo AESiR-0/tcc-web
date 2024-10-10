@@ -10,7 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-
+import random from '@/public/static/factory/VBV01082.jpg'
 
 const content = [
   {
@@ -44,6 +44,7 @@ const content = [
 
 ];
 export function Hero() {
+
   return (
     <>
       <Carousel
@@ -51,7 +52,10 @@ export function Hero() {
         className="w-full bg-black h-[90vh] overflow-hidden max-w-full"
       >
         <CarouselContent>
-          {content.map((obj, index) => (
+          {content.map((obj, index) =>{ 
+            console.log(obj);
+            console.log(random.src);
+            return  (
             <CarouselItem key={index}>
 <div
   className={`relative overflow-hidden opacity-80 bg-black  h-[100vh] bg-cover bg-no-repeat p-12 text-center`}
@@ -77,7 +81,7 @@ export function Hero() {
   </div>
 </div>
             </CarouselItem>
-          ))}
+          )})}
         </CarouselContent>
         <CarouselPrevious />
         <CarouselNext />
