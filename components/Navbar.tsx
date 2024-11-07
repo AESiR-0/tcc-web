@@ -1,14 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import logo from '@/public/static/logo/old-removebg-preview.pngold.png'
+import logo from "@/public/static/logo/old-removebg-preview.pngold.png";
 import Image from "next/image";
 import Link from "next/link";
 
 const menuItems = [
   { title: "Home", path: "/" },
-  { title: "Products", path: "/products" },
-  { title: "About Us", path: "/about" },
+  { title: "About Us", path: "#about" },
+  { title: "Products", path: "#products" },
 ];
 
 export const Navbar = () => {
@@ -17,11 +17,10 @@ export const Navbar = () => {
   return (
     <div className=" bg-transparent top-0 md:flex md:justify-between border-b-2 border-tertiary  md:px-10 max-md:p-5 h-20 ">
       <div className="flex justify-between  items-center">
-        <span className="text-xl"><Image alt="logo" height={128} width={128} src={logo}/></span>
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className=" md:hidden"
-        >
+        <span className="text-xl">
+          <Image alt="logo" height={128} width={128} src={logo} />
+        </span>
+        <button onClick={() => setIsOpen(!isOpen)} className=" md:hidden">
           <svg
             className="w-6 h-6"
             fill="none"
@@ -39,12 +38,16 @@ export const Navbar = () => {
         </button>
       </div>
       <ul
-        className={`mt-4 md:flex md:h-10 max-md:bg-tertiary font-semibold  transition-transform md:space-x-8 top-10 right-0  ${isOpen ? "h-fit absolute" : "h-0 hidden"}`}
+        className={`mt-4 md:flex md:h-10 max-md:bg-tertiary font-semibold  transition-transform md:space-x-8 top-10 right-0  ${
+          isOpen ? "h-fit absolute" : "h-0 hidden"
+        }`}
       >
         {menuItems.map((item) => (
           <li key={item.title}>
             <Link href={item.path}>
-              <p className="block py-2 px-4 hover:scale-95 hover:text-tertiary transition-all">{item.title}</p>
+              <p className="block py-2 px-4 hover:scale-95 hover:text-tertiary transition-all">
+                {item.title}
+              </p>
             </Link>
           </li>
         ))}

@@ -2,21 +2,19 @@
 import React from "react";
 import Image from "next/image";
 import factoryImage from "@/public/static/factory/VBV01111 E.jpg";
-import { images } from "@/components/assets/images";
 
 export default function About() {
   return (
     <div className="relative">
-      <div className="flex absolute flex-col w-full justify-center gap-10 items-center">
+      <div className="flex absolute py-20 flex-col w-full justify-center gap-10 items-center">
         <h1 className="text-4xl font-bold uppercase tracking-tighter ">
           About Us
         </h1>
-        <span className="text-lg px-96 tracking-wide leading-8 text-center">
-          {" "}
-          Assumenda quaerat labore at harum. Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Reprehenderit nobis rem ex animi ipsa
-          illum enim accusamus distinctio temporibus. Ut quaerat inventore eos
-          saepe veritatis animi accusamus possimus voluptas accusantium.
+        <span className="text-xl px-80 shadow  leading-8 text-center">
+          TCC is an establishment where three generations have come together,
+          each enriching the company with their mindfulness, unrestrained
+          potential, and vigor. Our journey is fueled by the combined experience
+          and innovation of a family committed to excellence.
         </span>
         <button
           type="button"

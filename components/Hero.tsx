@@ -3,6 +3,8 @@ import * as React from "react";
 // import jaigarhFort from "@/public/static/caraousel/jaigarh-fort.jpg";
 import Autoplay from "embla-carousel-autoplay";
 import { images } from "./assets/images";
+import factoryPov from "@/public/static/factory/VBV01082.jpg";
+import factoryCenter from "@/public/static/factory/VBV01118.jpg";
 import {
   Carousel,
   CarouselContent,
@@ -10,30 +12,33 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import wireTopViewDark from "@/public//static/factory/VBV01326.jpg";
+import workerWorkingWide from "@/public/static/factory/VBV01148.jpg";
+import blurWorkerLookingAway from "@/public/static/factory/VBV01214.jpg";
 
 const content = [
   {
-    image: images.factoryCenter,
+    image: factoryCenter,
     title: "Taj Cables and Conductors",
     tagline: "Tagline",
   },
   {
-    image: images.factoryPov,
+    image: factoryPov,
     title: "Taj Cables and Conductors",
     tagline: "Tagline",
   },
   {
-    image: images.wireTopViewDark,
+    image: wireTopViewDark,
     title: "Taj Cables and Conductors",
     tagline: "Tagline",
   },
   {
-    image: images.workerWorkingWide,
+    image: workerWorkingWide,
     title: "Taj Cables and Conductors",
     tagline: "Tagline",
   },
   {
-    image: images.blurWorkerLookingAway,
+    image: blurWorkerLookingAway,
     title: "Taj Cables and Conductors",
     tagline: "Tagline",
   },
@@ -43,7 +48,7 @@ export function Hero() {
     <>
       <Carousel
         plugins={[Autoplay({ delay: 3500 })]}
-        className="w-full bg-black h-[90vh] overflow-hidden max-w-full"
+        className="w-full bg-black h-[100vh] overflow-hidden max-w-full"
       >
         <CarouselContent>
           {content.map((obj, index) => {
@@ -52,7 +57,7 @@ export function Hero() {
                 <div
                   className={`relative overflow-hidden opacity-80 bg-black  h-[100vh] bg-cover bg-no-repeat p-12 text-center`}
                   style={{
-                    backgroundImage: `url(${obj.image})`,
+                    backgroundImage: `url(${obj.image.src})`,
                     backgroundPosition: "center center",
                   }}
                 >
